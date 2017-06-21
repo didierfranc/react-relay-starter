@@ -1,0 +1,23 @@
+{
+  "name": "react-relay-starter",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-relay": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-relay": "^1.0.1",
+    "react-app-rewired": "^1.0.5",
+    "react-scripts": "1.0.7",
+    "relay-compiler": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "relay": "relay-compiler --src ./src --schema schema.graphql --watch",
+    "eject": "react-scripts eject"
+  }
+}
