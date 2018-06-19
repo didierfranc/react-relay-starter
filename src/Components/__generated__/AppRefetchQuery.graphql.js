@@ -1,6 +1,6 @@
 /**
  * @flow
- * @relayHash 6cf0973fbf1e1c578ed0687d7e71d395
+ * @relayHash f53b09a682111209bf42289c77616641
  */
 
 /* eslint-disable */
@@ -10,18 +10,18 @@
 /*::
 import type { ConcreteRequest } from 'relay-runtime';
 type App_query$ref = any;
-export type AppQueryVariables = {|
+export type AppRefetchQueryVariables = {|
   x?: ?number,
   y?: ?number,
 |};
-export type AppQueryResponse = {|
+export type AppRefetchQueryResponse = {|
   +$fragmentRefs: App_query$ref
 |};
 */
 
 
 /*
-query AppQuery {
+query AppRefetchQuery {
   ...App_query_1tlLEo
 }
 
@@ -51,13 +51,13 @@ var v0 = [
 return {
   "kind": "Request",
   "operationKind": "query",
-  "name": "AppQuery",
+  "name": "AppRefetchQuery",
   "id": null,
-  "text": "query AppQuery {\n  ...App_query_1tlLEo\n}\n\nfragment App_query_1tlLEo on Query {\n  test {\n    a\n    id\n  }\n}\n",
+  "text": "query AppRefetchQuery {\n  ...App_query_1tlLEo\n}\n\nfragment App_query_1tlLEo on Query {\n  test {\n    a\n    id\n  }\n}\n",
   "metadata": {},
   "fragment": {
     "kind": "Fragment",
-    "name": "AppQuery",
+    "name": "AppRefetchQuery",
     "type": "Query",
     "metadata": null,
     "argumentDefinitions": v0,
@@ -84,7 +84,7 @@ return {
   },
   "operation": {
     "kind": "Operation",
-    "name": "AppQuery",
+    "name": "AppRefetchQuery",
     "argumentDefinitions": v0,
     "selections": [
       {
@@ -117,5 +117,5 @@ return {
 };
 })();
 // prettier-ignore
-(node/*: any*/).hash = '03a64f69ba391ad0ed4804a07628cede';
+(node/*: any*/).hash = '241ac14909c0a4a971cdd236476c4bff';
 module.exports = node;

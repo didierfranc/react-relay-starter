@@ -1,4 +1,8 @@
 type Query {
-  hello: String
-  id: Int
+  test(x: Float, y: Float): RootType
+}
+
+type RootType {
+  id: ID!
+  a: String
 }
