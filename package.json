@@ -5,7 +5,7 @@
   "dependencies": {
     "graphql": "^0.13.2",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.4.2",
     "react-relay": "^1.6.0"
   },
   "devDependencies": {
